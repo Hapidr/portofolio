@@ -8,52 +8,59 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="icon" href="/assets/ikon3.png">
+  <script src="https://kit.fontawesome.com/f8378f43ef.js" crossorigin="anonymous"></script>
   <title>Home</title>
 </head>
 
-<body class="bg-dark">
-  <!-- Nav section start -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top navbar-outline-light" style="box-shadow: 0 5px 10px 0 black;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/" style="color: crimson;">Hapidr</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Others
-            </a>
-            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item text-light" href="/price">Price-list</a></li>
-              <li>
-                <hr class="dropdown-divider" style="color: white;">
-              </li>
-              <li><a class="dropdown-item text-light" href="/contact">Contact</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
+<body class="bg-dark text-light">
+  <header class="sticky-top">
+    <!-- Nav section start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light" style="box-shadow: 0 5px 10px 0 black;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/" style="color: crimson;">Hapidr</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/price">Price-list</a>
+            </li>
+            <!--             
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Others
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+
+                <li>
+                  <hr class="dropdown-divider" style="color: white;">
+                </li>
+                <li><a class="dropdown-item text-light" href="/contact">Contact</a></li>
+              </ul>
+            </li>
+             -->
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Nav section end -->
+    </nav>
+    <!-- Nav section end -->
+  </header>
 
-
-  <!-- Start of carousel images -->
-  <div class="container-fluid text-light" style="height: 100vh;">
+  <main class="container-fluid text-light">
+    <!-- Start of carousel Images -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -67,7 +74,7 @@
         <div class="carousel-item active">
           <img src="assets/carousel.jpg" class="d-block w-100" alt="Perintis Program Rumbling" style="height: 500px;">
           <div class="carousel-caption" style="text-shadow: 3px 3px 3px black;">
-            <h5 >Perintis Program Rumbling</h5>
+            <h5>Perintis Program Rumbling</h5>
             <p>Eren Yeager, Grisha Yeager, Eren Kruger</p>
           </div>
         </div>
@@ -98,6 +105,8 @@
       </button>
     </div>
     <!-- end of carousel images -->
+
+    <!-- Start of Image Profile -->
     <div class="row text-center align-items-center mt-4">
       <div class="col-12">
         <img src="assets/Eren_reveals_his_cut_palm-removebg-preview.png" alt="Image" height="150" width="150" />
@@ -105,6 +114,9 @@
         <i>Berpengalaman meratakan <span style="color: crimson;">80%</span> dari permukaan bumi</i>
       </div>
     </div>
+    <!-- End of Image Profile -->
+
+    <!-- Start of Card Items -->
     <div class="row text-dark mt-4">
       <div class="col-sm-4 g-4 mb-4">
         <div class="card" style="background-color: #F2F2F2;">
@@ -118,7 +130,7 @@
         </div>
       </div>
       <div class="col-sm-4 g-4 mb-4">
-        <div class="card" style="background-color: #41414b;">
+        <div class="card" style="background-color: #F2F2F2;">
           <div class="card-body">
             <h5 class="card-title text-center">Paket Rumbling Terbaik</h5>
             <p class="card-text"
@@ -129,7 +141,7 @@
         </div>
       </div>
       <div class="col-sm-4 g-4 mb-4">
-        <div class="card" style="background-color: #bebebe;">
+        <div class="card" style="background-color: #F2F2F2;">
           <div class="card-body">
             <h5 class="card-title text-center">Bertemu dengan Eren Yeager</h5>
             <p class="card-text"
@@ -140,7 +152,51 @@
         </div>
       </div>
     </div>
-  </div>
+    <!-- End of Card Items -->
+  </main>
+
+  <footer class="bg-dark text-center text-white">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <h3>Made with <i class="fa-solid fa-hand-holding-heart" style="color: crimson;"></i> By Me</h3>
+      
+      <!-- Start of Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Start of Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://web.facebook.com/hapidr24" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/hpdr.c_137/"
+            role="button"><i class="fab fa-instagram"></i></a>
+
+          <!-- Telegram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://t.me/codename_RvnG" role="button"><i
+              class="fab fa-telegram"></i></a>
+
+          <!-- Discord -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://discordapp.com/users/Hapid Ramdani#6632"
+            role="button"><i class="fab fa-discord"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/hapid-ramdani-277961220"
+            role="button"><i class="fab fa-linkedin-in"></i></a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Hapidr" role="button"><i
+              class="fab fa-github"></i></a>
+        </section>
+        <!-- End of Social media -->
+      </div>
+      <!-- End Grid container -->
+
+      <!-- Start of Copyright -->
+      <i class="fa-brands fa-bootstrap"></i>&#169; 2022 Copyright:
+      <a class="text-white" href="/" style="text-decoration: none;">Rumbling</a>
+    </div>
+    <!-- End of Copyright -->
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
